@@ -1,0 +1,55 @@
+{
+	"private": true,
+	"name": "nahsh-gtfs-rt-server",
+	"description": "Expose Schleswig-Holstein & Hamburg transit data as a GTFS-RT feed.",
+	"version": "2.0.0",
+	"main": "index.js",
+	"keywords": [
+		"schleswig-holstein",
+		"de-sh",
+		"hamburg",
+		"nah.sh",
+		"hvv",
+		"gtfs-rt",
+		"gtfs realtime",
+		"transit",
+		"public transport"
+	],
+	"author": [
+		"Jannis R <mail@jannisr.de>",
+		"Holger Bruch <holger.bruch@systect.de>",
+	],
+	"homepage": "https://github.com/derhuerst/nahsh-gtfs-rt-server",
+	"repository": "derhuerst/nahsh-gtfs-rt-server",
+	"bugs": "https://github.com/derhuerst/nahsh-gtfs-rt-server/issues",
+	"license": "(Apache-2.0 AND Prosperity-3.0.0)",
+	"funding": [
+		{
+			"type": "License Zero",
+			"url": "https://licensezero.com/offers/eb4289ed-952b-48d7-94ee-5820ea0f93e6"
+		}
+	],
+	"engines": {
+		"node": ">=14"
+	},
+	"dependencies": {
+		"cached-hafas-client": "^4.0.0",
+		"hafas-client": "^5.16.0",
+		"hafas-gtfs-rt-feed": "^5.0.0",
+		"ioredis": "^4.26.0",
+		"slugg": "^1.2.1",
+		"tokenize-vbb-station-name": "^1.1.0"
+	},
+	"devDependencies": {
+		"@derhuerst/technical-docs-cli": "^1.2.0",
+		"eslint": "^7.11.0"
+	},
+	"scripts": {
+		"start": "./start.sh",
+		"docs": "build-technical-doc --inline-html --syntax-stylesheet-url /syntax.css <docs/readme.md >docs/index.html && build-technical-doc --syntax-stylesheet github >docs/syntax.css",
+		"lint": "eslint .",
+		"build": "./build.sh && npm run docs",
+		"test": "echo todo; exit 1",
+		"prepublishOnly": "npm run lint && npm run build && npm test"
+	}
+}
