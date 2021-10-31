@@ -17,7 +17,7 @@
 	],
 	"author": [
 		"Jannis R <mail@jannisr.de>",
-		"Holger Bruch <holger.bruch@systect.de>",
+		"Holger Bruch <holger.bruch@systect.de>"
 	],
 	"homepage": "https://github.com/derhuerst/nahsh-gtfs-rt-server",
 	"repository": "derhuerst/nahsh-gtfs-rt-server",
