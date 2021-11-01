@@ -4,7 +4,10 @@ set -e
 set -o pipefail
 set -x
 
+# gtfs.mfdz.de mirrors the Nah.SH GTFS dataset requiring a token from connect-info.net
 #wget -O gtfs.zip 'http://www.connect-info.net/opendata/gtfs/nah.sh/%CONNECT-INFO-TOKEN%'
+
+# gtfs.mfdz.de mirrors the Nah.SH GTFS dataset without a token
 wget -O gtfs.zip 'https://gtfs.mfdz.de/NAH.SH.raw.gtfs.zip'
 unzip -o -d gtfs -j gtfs.zip
 
