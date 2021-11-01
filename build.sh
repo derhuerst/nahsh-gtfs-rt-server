@@ -4,8 +4,8 @@ set -e
 set -o pipefail
 set -x
 
-# todo: find a URL that always points to the latest dataset
-wget -O gtfs.zip 'todo'
+#wget -O gtfs.zip 'http://www.connect-info.net/opendata/gtfs/nah.sh/%CONNECT-INFO-TOKEN%'
+wget -O gtfs.zip 'https://gtfs.mfdz.de/NAH.SH.raw.gtfs.zip'
 unzip -o -d gtfs -j gtfs.zip
 
 env | grep '^PG'
