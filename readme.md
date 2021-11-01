@@ -38,7 +38,7 @@ The build script will download [the latest nah.SH GTFS Static data](#todo) and i
 Specify the bounding box to be observed as JSON:
 
 ```shell
-export BBOX='{"north": todo, "west": todo, "south": todo, "east": todo}'
+export BBOX='{"north": 55.0573747014, "west": 7.8685145620, "south": 53.3590675115, "east": 11.3132037822}'
 ```
 
 `nahsh-gtfs-rt-server` uses [`hafas-gtfs-rt-feed`](https://github.com/derhuerst/hafas-gtfs-rt-feed) underneath, which is split into three parts: polling the HAFAS endpoint (`monitor-hafas` CLI), matching realtime data (`match-with-gtfs` CLI), and serving a GTFS-RT feed (`serve-as-gtfs-rt` CLI). You can run all three at once using the `start.sh` wrapper script:
