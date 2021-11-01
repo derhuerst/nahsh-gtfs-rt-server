@@ -56,7 +56,7 @@ A Docker image [is available as `derhuerst/nahsh-gtfs-rt-server`](https://hub.do
 *Note:* The Docker image *does not* contain Redis, PostgreSQL & NATS. You need to configure access to them using the environment variables documented above (e.g. `NATS_STREAMING_URL`).
 
 ```shell
-export BBOX='{"north": todo, "west": todo, "south": todo, "east": todo}'
+export BBOX='{"north": 55.0573747014, "west": 7.8685145620, "south": 53.3590675115, "east": 11.3132037822}'
 # build the matching index
 docker run -e BBOX -i -t --rm derhuerst/nahsh-gtfs-rt-server ./build.sh
 # run
