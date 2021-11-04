@@ -2,6 +2,8 @@
 
 **This endpoint provides realtime transit data for Schleswig-Holstein & Hamburg in the [GTFS Realtime (GTFS-RT)](https://gtfs.org/reference/realtime/v2/) format.**
 
+*Note:* This feed is currently shut off as requested by Nah.SH.
+
 [![API status](https://shields.io/uptimerobot/status/m789602581-59189e6b36aca6542d1e0eea)](https://stats.uptimerobot.com/57wNLs39M/789602581)
 
 <iframe id="inspector" title="gtfs-rt-inspector showing this feed" loading="lazy" src="https://public-transport.github.io/gtfs-rt-inspector/?feedUrl=https%3A%2F%2Fv0.sh-gtfs-rt.transport.rest%2Ffeed" style="width: 100%; height: 50vh; min-height: 20em; border: 1px solid #333; box-sizing: border-box"></iframe>
